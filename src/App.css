@@ -32,8 +32,11 @@
   }
 }
 
-.card {
+.Card {
   padding: 2em;
+  position:absolute;
+  top:0;
+  left:0;
 }
 
 .read-the-docs {
@@ -48,4 +51,8 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 2vh 5vw;
+}
+
+.App {
+  position: relative;
 }

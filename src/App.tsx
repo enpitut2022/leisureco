@@ -4,7 +4,15 @@ import Card from './pages/cards'
 function App() {
   return (
     <div className="App">
-      <Card />
+      <div className="Card">
+        <Card />
+      </div>
+      <div className="Card">
+        <Card />
+      </div>
+      <div className="Card">
+        <Card />
+      </div>
     </div>
   )
 }
