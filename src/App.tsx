@@ -7,12 +7,6 @@ function App() {
       <div className="Card">
         <Card />
       </div>
-      <div className="Card">
-        <Card />
-      </div>
-      <div className="Card">
-        <Card />
-      </div>
     </div>
   )
 }
