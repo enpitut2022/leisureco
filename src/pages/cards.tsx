@@ -1,5 +1,6 @@
 import TinderCard from 'react-tinder-card';
 import React from 'react';
+import { useState } from 'react'; //変数みたいなもん
 
 interface store {
   name: string;
@@ -34,8 +35,10 @@ const tmpStoreList: Array<store> = [
 ];
 
 const Cards = () => {
+    const [searchText, setsearchText] = useState('');
     return (
         <div className="Cards">
+            {searchText}
             {tmpStoreList.map((store, index) => (
                 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
                 // @ts-ignore
