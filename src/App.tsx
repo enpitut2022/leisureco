@@ -1,5 +1,5 @@
-import './App.css'
-import Card from './pages/cards'
+import "./App.css";
+import Card from "./pages/cards";
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
         <Card />
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
