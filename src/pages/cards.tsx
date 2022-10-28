@@ -30,10 +30,10 @@ const tmpStoreList: Array<store> = [
 
 const Cards = () => {
     return (
-        <div>
+        <div className='Cards'>
             {tmpStoreList.map((store, index) => (
                 // @ts-ignore
-                <TinderCard>
+                <TinderCard className='Card'>
                     <div className='shop-card'>
                         <p>{store.name}</p>
                         <p>{store.time}</p>

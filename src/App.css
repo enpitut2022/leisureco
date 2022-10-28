@@ -33,11 +33,9 @@
 }
 
 .Card {
-	padding: 2em;
 	position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background-color: black;
+  border-radius: 3%;
 }
 
 .read-the-docs {
@@ -54,7 +52,12 @@
   padding: 2vh 5vw;
 }
 
+.Cards {
+  position: relative;
+  width: 50vw;
+}
+
 .App {
-	position: relative;
-	width: 50vw;
+  width: 60vw;
+  height: 100vh;
 }
