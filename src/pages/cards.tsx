@@ -3,6 +3,7 @@ import TinderCard from 'react-tinder-card'
 interface store {
     name: string;
     time: string;
+    tspend: string;
     image: string;
     price: string;
     mapname: string;
@@ -13,6 +14,7 @@ const tmpStoreList: Array<store> = [
     {
         name: 'つくば温泉 喜楽里 別邸',
         time: '09:00 ~ 24:00',
+        tspend: '1~2時間',
         image: 'https://www.yurakirari.com/kirari/tsukuba/images/inside_spa/inside_spa_ph01.jpg',
         price: '1000 ~ 2000円',
         mapname: '茨城県つくば市西大橋６１４−１',
@@ -21,6 +23,7 @@ const tmpStoreList: Array<store> = [
     {
         name: 'スポーレクライミングジム',
         time: '13:00~22:00',
+        tspend: '1~2時間',
         image: 'https://spoleclimbinggym.com/wp/wp-content/uploads/2020/05/QoutaSpole2-1024x683.jpg',
         price: '2000円',
         mapname: '茨城県つくば市下原３７０−１',
@@ -36,10 +39,11 @@ const Cards = () => {
                 <TinderCard className='Card'>
                     <div className='shop-card'>
                         <p>{store.name}</p>
-                        <p>{store.time}</p>
+                        <p>営業時間：{store.time}</p>
+                        <p>所要時間：{store.tspend}</p>
                         <img src={store.image}></img>
-                        <p>{store.price}</p>
-                        <a href={store.maplink}>{store.mapname}</a>
+                        <p>費用：{store.price}</p>
+                        <p>住所：<a href={store.maplink}>{store.mapname}</a></p>
                     </div>
                 </TinderCard>
             )
